@@ -21,3 +21,5 @@ mongo:
   image: mongo:3.0.4
   volumes:
     - docker/mongo/data:/data/db
+  ports:
+    - "127.0.0.69:27017:27017"
