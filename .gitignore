@@ -10,4 +10,5 @@ composer.lock
 vendor
 components
 build.sh
+docker-compose.yml
 
