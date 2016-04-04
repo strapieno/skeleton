@@ -16,15 +16,22 @@
         "matryoshka-model/matryoshka": "0.8.*@dev",
         "matryoshka-model/mongo-wrapper": "0.8.*@dev",
         "matryoshka-model/zf2-matryoshka-module": "0.8.*@dev",
+        "matryoshka-model/zf-apigility-matryoshka": "dev-develop",
         "strapieno/str-user-recover-password-api" : "dev-develop",
+        "strapieno/str-nightclub-api" : "dev-develop",
+        "strapieno/str-nightclub-model" : "dev-develop",
+        "strapieno/str-nightclub-cover-api" : "dev-develop",
+        "strapieno/str-nightclub-cover-model" : "dev-develop",
+        "strapieno/str-nightclub-review-api": "dev-develop",
+        "strapieno/str-nightclub-review-model": "dev-develop",
+        "strapieno/str-identity-api" : "dev-develop",
         "strapieno/str-auth-api" : "dev-develop",
         "strapieno/str-auth-model" : "dev-develop",
         "strapieno/str-user-model" : "dev-develop",
-        "strapieno/str-user-api" : "dev-develop",
+          "strapieno/str-user-api" : "dev-develop",
         "strapieno/str-user-avatar-model" : "dev-develop",
         "strapieno/str-user-avatar-api" : "dev-develop",
         "strapieno/str-utils" : "dev-develop",
-        "matryoshka-model/zf-apigility-matryoshka": "dev-develop",
         "strapieno/str-user-check-identity-api" : "dev-develop",
         "ripaclub/aclman": "dev-develop@dev",
         "ripaclub/zf-apigility-imgman": "dev-develop"
@@ -37,11 +44,35 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "git@github.com:matryoshka-model/zf-apigility-matryoshka.git"
+      "url": "git@github.com:matryoshka-model/zf-apigility-matryoshka"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:strapieno/str-nightclub-review-api.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:strapieno/str-nightclub-review-model.git"
     },
     {
       "type": "vcs",
       "url": "git@github.com:strapieno/str-utils.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:strapieno/str-nightclub-api.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:strapieno/str-nightclub-model.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:strapieno/str-nightclub-cover-api.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:strapieno/str-nightclub-cover-model.git"
     },
     {
       "type": "vcs",
@@ -61,7 +92,15 @@
     },
     {
       "type": "vcs",
+      "url": "git@github.com:strapieno/str-user-api.git"
+    },
+    {
+      "type": "vcs",
       "url": "git@github.com:strapieno/str-user-avatar-model"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:strapieno/str-identity-api"
     },
     {
       "type": "vcs",
@@ -74,6 +113,13 @@
     {
       "type": "vcs",
       "url": "git@github.com:ripaclub/zf-apigility-imgman.git"
+    }
+  ],
+  "authors": [
+    {
+      "name": "Antonio Visalli",
+      "email": "antonino.visalli@gmail.com",
+      "homepage": "http://github.com/visa4"
     }
   ]
 }

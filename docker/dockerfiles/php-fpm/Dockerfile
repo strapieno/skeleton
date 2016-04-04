@@ -37,8 +37,8 @@ RUN ln -s /usr/local/php/bin/* /usr/local/bin
 WORKDIR /tmp
 
 # mongo driver
-RUN wget -nv -O - https://github.com/mongodb/mongo-php-driver/archive/1.6.9.tar.gz | tar zx
-WORKDIR mongo-php-driver-1.6.9/
+RUN wget -nv -O - http://pecl.php.net/get/mongo-1.6.9.tgz | tar zx
+WORKDIR mongo-1.6.9/
 RUN phpize
 RUN ./configure
 RUN make -j

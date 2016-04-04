@@ -25,6 +25,11 @@ return [
         'mongo' => [
             'dsn' => 'mongo:27017',
         ],
+        // https://apigility.org/documentation/auth/authentication-oauth2
+        'options' => [
+            'always_issue_new_refresh_token' => true, // zf2 default is false
+            // 'refresh_token_lifetime' => (default is 1209600, equal to 14 days)
+        ],
     ],
     'mongodb' => [
         'Mongo\Db' => [

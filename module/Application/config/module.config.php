@@ -1,18 +1,5 @@
 <?php
-/**
- * Zend Framework (http://framework.zend.com/)
- *
- * @link      http://github.com/zendframework/ZendSkeletonApplication for the canonical source repository
- * @copyright Copyright (c) 2005-2014 Zend Technologies USA Inc. (http://www.zend.com)
- * @license   http://framework.zend.com/license/new-bsd New BSD License
- */
-
 return [
-    'matryoshka-objects' => [
-        'User' => [
-            'type' => 'Application\Model\User\Entity\UserEntity',
-        ],
-    ],
     'view_manager'          => [
         'display_not_found_reason' => true,
         'display_exceptions'       => true,
@@ -31,5 +18,10 @@ return [
         'strategies' => [
             'ViewJsonStrategy',
         ],
+    ],
+    'input_filters' => [
+        'abstract_factories' => [
+            'Strapieno\Utils\InputFilter\InputFilterAbstractServiceFactory',
+        ]
     ],
 ];

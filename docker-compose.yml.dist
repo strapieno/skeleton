@@ -4,8 +4,10 @@ nginx:
     - docker/nginx/conf:/usr/local/nginx/conf
     - .:/var/www/str-skeleton
   ports:
-    - "127.0.0.50:80:80"
-    - "127.0.0.50:8090:8090"
+    - "127.0.0.69:80:80"
+    - "127.0.0.69:8090:8090"
+  expose:
+    - "8090"
   links:
     - fpm:fpm
 
@@ -22,4 +24,4 @@ mongo:
   volumes:
     - docker/mongo/data:/data/db
   ports:
-      - "127.0.0.69:27017:27017"
+    - "127.0.0.69:27017:27017"
