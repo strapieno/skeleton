@@ -12,7 +12,7 @@
     "homepage": "https://github.com/strapieno/skeleton",
     "require": {
         "php": ">=5.4.0",
-        "zendframework/zendframework": "~2.5",
+        "zendframework/zendframework": "~2.5.1",
         "matryoshka-model/matryoshka": "0.8.*@dev",
         "matryoshka-model/mongo-wrapper": "0.8.*@dev",
         "matryoshka-model/zf2-matryoshka-module": "0.8.*@dev",
@@ -28,7 +28,7 @@
         "strapieno/str-auth-api" : "dev-develop",
         "strapieno/str-auth-model" : "dev-develop",
         "strapieno/str-user-model" : "dev-develop",
-          "strapieno/str-user-api" : "dev-develop",
+        "strapieno/str-user-api" : "dev-develop",
         "strapieno/str-user-avatar-model" : "dev-develop",
         "strapieno/str-user-avatar-api" : "dev-develop",
         "strapieno/str-utils" : "dev-develop",

@@ -1,5 +1,28 @@
 <?php
 return [
+    'service_manager' => [
+        'abstract_factories' => [
+        ],
+        'factories' => [
+        ],
+        'invokables' => [
+        ]
+    ],
+    'input_filters' => [
+        'abstract_factories' => [
+            'Strapieno\Utils\InputFilter\InputFilterAbstractServiceFactory',
+        ],
+        'invokables' => [
+            'Zend\InputFilter\InputFilter' => 'Zend\InputFilter\InputFilter',
+            'Zend\InputFilter\Input' => 'Zend\InputFilter\Input'
+        ]
+    ],
+    'matryoshka-objects' => [
+        'User' => [
+            'type' => 'Application\Entity\UserEntity',
+            'active_record_criteria' => 'Strapieno\Model\Criteria\NotIsolatedActiveRecordCriteria'
+        ],
+    ],
     'view_manager'          => [
         'display_not_found_reason' => true,
         'display_exceptions'       => true,
@@ -18,10 +41,5 @@ return [
         'strategies' => [
             'ViewJsonStrategy',
         ],
-    ],
-    'input_filters' => [
-        'abstract_factories' => [
-            'Strapieno\Utils\InputFilter\InputFilterAbstractServiceFactory',
-        ]
-    ],
+    ]
 ];

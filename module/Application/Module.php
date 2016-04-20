@@ -2,8 +2,10 @@
 
 namespace Application;
 
-use Matryoshka\Model\ModelManager;
+use Strapieno\Auth\Api\Authorization\AuthorizationListenerAggregate;
 use Strapieno\Utils\Listener\CorsListener;
+use Zend\EventManager\EventManagerInterface;
+use Zend\InputFilter\InputFilterPluginManager;
 use Zend\Mvc\MvcEvent;
 
 class Module
@@ -16,7 +18,14 @@ class Module
     public function onBootstrap(MvcEvent $e)
     {
         $events = $e->getApplication()->getEventManager();
+        // TODO make cors config
         $events->attachAggregate(new CorsListener());
+        $this->loadEvent($events);
+    }
+
+    protected function loadEvent(EventManagerInterface $eventManager)
+    {
+        $eventManager->attachAggregate(new AuthorizationListenerAggregate());
     }
 
     public function getAutoloaderConfig()
